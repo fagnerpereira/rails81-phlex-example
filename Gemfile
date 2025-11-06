@@ -69,3 +69,5 @@ end
 
 gem "phlex-rails", "~> 2.3"
 gem "rspec-rails", "~> 8.0"
+
+gem "slim-rails", "~> 3.7"
