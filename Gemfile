@@ -69,3 +69,5 @@ end
 
 gem "phlex-rails", "~> 2.3"
 gem "rspec-rails", "~> 8.0"
+gem "phlex-rails-scaffold", path: "/home/fpr/workspace/opensource/phlex-rails-scaffold"
+gem "any2any", path: "/home/fpr/workspace/opensource/any2any"

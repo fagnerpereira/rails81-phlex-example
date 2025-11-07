@@ -1,3 +1,22 @@
+PATH
+  remote: /home/fpr/workspace/opensource/any2any
+  specs:
+    any2any (0.1.0)
+      diff-lcs (~> 1.5)
+      haml (~> 6.0)
+      herb (~> 0.7)
+      parser (~> 3.3)
+      pastel (~> 0.8)
+      slim (~> 5.2)
+      temple (~> 0.10)
+      thor (~> 1.3)
+      tty-prompt (~> 0.23)
+
+PATH
+  remote: /home/fpr/workspace/opensource/phlex-rails-scaffold
+  specs:
+    phlex-rails-scaffold (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -125,6 +144,11 @@ GEM
       raabro (~> 1.4)
     globalid (1.3.0)
       activesupport (>= 6.1)
+    haml (6.4.0)
+      temple (>= 0.8.2)
+      thor
+      tilt
+    herb (0.7.5)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     image_processing (1.14.0)
@@ -205,6 +229,8 @@ GEM
     parser (3.3.10.0)
       ast (~> 2.4.1)
       racc
+    pastel (0.8.0)
+      tty-color (~> 0.5)
     phlex (2.3.1)
       zeitwerk (~> 2.7)
     phlex-rails (2.3.1)
@@ -332,6 +358,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    slim (5.2.1)
+      temple (~> 0.10.0)
+      tilt (>= 2.1.0)
     solid_cable (3.0.12)
       actioncable (>= 7.2)
       activejob (>= 7.2)
@@ -372,12 +401,24 @@ GEM
     tailwindcss-ruby (4.1.16-aarch64-linux-musl)
     tailwindcss-ruby (4.1.16-x86_64-linux-gnu)
     tailwindcss-ruby (4.1.16-x86_64-linux-musl)
+    temple (0.10.4)
     thor (1.4.0)
     thruster (0.1.16)
     thruster (0.1.16-aarch64-linux)
     thruster (0.1.16-x86_64-linux)
+    tilt (2.6.1)
     timeout (0.4.4)
     tsort (0.2.0)
+    tty-color (0.6.0)
+    tty-cursor (0.7.1)
+    tty-prompt (0.23.1)
+      pastel (~> 0.8)
+      tty-reader (~> 0.8)
+    tty-reader (0.9.0)
+      tty-cursor (~> 0.7)
+      tty-screen (~> 0.8)
+      wisper (~> 2.0)
+    tty-screen (0.8.2)
     turbo-rails (2.0.20)
       actionpack (>= 7.1.0)
       railties (>= 7.1.0)
@@ -398,6 +439,7 @@ GEM
       base64
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    wisper (2.0.1)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.7.3)
@@ -413,6 +455,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  any2any!
   bootsnap
   brakeman
   bundler-audit
@@ -423,6 +466,7 @@ DEPENDENCIES
   jbuilder
   kamal
   phlex-rails (~> 2.3)
+  phlex-rails-scaffold!
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.1)
